@@ -2,21 +2,20 @@ import time
 import streamlit as st
 
 
-from repochat.utils import init_session_state
-from repochat.git import git_form
-from repochat.db import vector_db, load_to_db
-from repochat.models import hf_embeddings, code_llama
-from repochat.chain import response_chain
+from src.utils import init_session_state
+from src.git import git_form
+from src.db import vector_db, load_to_db
+from src.models import hf_embeddings, code_llama
+from src.chain import response_chain
 
 init_session_state()
 
 
 st.set_page_config(
-    page_title="RepoChat",
+    page_title="Chat with your GitHub Repo",
     page_icon="💻",
     initial_sidebar_state="expanded",
-    menu_items={
-        'Report a bug': "https://github.com/pnkvalavala/repochat/issues",
+    menu_items={,
         'About': "No need to worry if you can't understand GitHub code or repositories anymore! Introducing RepoChat, where you can effortlessly chat and discuss all things related to GitHub repositories."
     }
 )
