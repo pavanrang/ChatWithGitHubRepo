@@ -11,6 +11,6 @@ def hf_embeddings():
 
 def code_llama():
     
-    llm =ChatGroq(model_name="mixtral-8x7b-32768", temperature=0.7,groq_api_key="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")
+    llm =ChatGroq(model_name="mixtral-8x7b-32768", temperature=0.7,groq_api_key="")
 
     return llm
